@@ -1,0 +1,52 @@
+import plantas.*
+import parcelas.*
+test "sin error" {
+	const parcela = new Parcela(ancho = 10, largo = 1, horasDeSol = 10, plantas = [])
+    
+    const soja1 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja2 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja3 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja4 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja5 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja6 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+	
+	
+	assert.equals(10, parcela.superficie())
+	assert.equals(5,parcela.cantidadMaximaDePlantas())
+	
+	parcela.plantarUnaPlanta(soja1)
+    parcela.plantarUnaPlanta(soja2)
+	parcela.plantarUnaPlanta(soja3)
+	parcela.plantarUnaPlanta(soja4)
+	parcela.plantarUnaPlanta(soja5)
+
+	
+    
+
+}
+
+test "opcionConError"
+ {
+	const parcela = new Parcela(ancho = 10, largo = 1, horasDeSol = 10, plantas = [])
+    
+    const soja1 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja2 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja3 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja4 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja5 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+    const soja6 = new Soja (anioDeObtencionDeSemilla = 2000, altura = 1)
+	
+	
+	assert.equals(10, parcela.superficie())
+	assert.equals(5,parcela.cantidadMaximaDePlantas())
+	
+	parcela.plantarUnaPlanta(soja1)
+    parcela.plantarUnaPlanta(soja2)
+	parcela.plantarUnaPlanta(soja3)
+	parcela.plantarUnaPlanta(soja4)
+	parcela.plantarUnaPlanta(soja5)
+	parcela.plantarUnaPlanta(soja6)
+	
+    
+
+}
